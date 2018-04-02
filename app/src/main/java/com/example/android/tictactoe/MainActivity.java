@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
 
     //This is a global variable for all the 9 buttons plus rest button.
     Button button1, button2, button3, button4, button5, button6, button7, button8, button9,
-            button10,button11,button12,button13,button14,button15,button1_1,button1_2,
-            button2_1,button2_2,button3_1,button3_2,button4_1,button4_2,button5_1,
-            button5_2,show5,reset;
+            button10, button11, button12, button13, button14, button15, button1_1, button1_2,
+            button2_1, button2_2, button3_1, button3_2, button4_1, button4_2, button5_1,
+            button5_2, show5, reset;
 
     /**
      * This are variable for the score
@@ -262,9 +262,9 @@ public class MainActivity extends AppCompatActivity {
         show5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String curText = String.valueOf(((TextView)view).getText());
+                String curText = String.valueOf(((TextView) view).getText());
                 //If the text is "Change to 5", it will make this hidden button visible
-                if(curText.equals("Change to 5")){
+                if (curText.equals("Change to 5")) {
                     button10.setVisibility(View.VISIBLE);
                     button11.setVisibility(View.VISIBLE);
                     button12.setVisibility(View.VISIBLE);
@@ -281,10 +281,10 @@ public class MainActivity extends AppCompatActivity {
                     button4_2.setVisibility(View.VISIBLE);
                     button5_1.setVisibility(View.VISIBLE);
                     button5_2.setVisibility(View.VISIBLE);
-                    ((TextView)view).setText("Change to 3");
+                    ((TextView) view).setText("Change to 3");
                 }
                 //If the text is "Change to 3", it will make this button hidden.
-                if(curText.equals("Change to 3")){
+                if (curText.equals("Change to 3")) {
                     button10.setVisibility(View.GONE);
                     button11.setVisibility(View.GONE);
                     button12.setVisibility(View.GONE);
@@ -301,7 +301,7 @@ public class MainActivity extends AppCompatActivity {
                     button4_2.setVisibility(View.GONE);
                     button5_1.setVisibility(View.GONE);
                     button5_2.setVisibility(View.GONE);
-                    ((TextView)view).setText("Change to 5");
+                    ((TextView) view).setText("Change to 5");
                 }
 
 
@@ -325,29 +325,29 @@ public class MainActivity extends AppCompatActivity {
         //This check the moves for Player X if it wins.
         if (btn1.equals("X") && btn2.equals("X") && btn3.equals("X")) {
             Toast.makeText(MainActivity.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
-              playerX_score=+1;
+            playerX_score = +1;
             displayForPlayerX(playerX_score);
 
         }
         if (btn1.equals("X") && btn4.equals("X") && btn7.equals("X")) {
             Toast.makeText(MainActivity.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
-             playerX_score=+1;
+            playerX_score = +1;
             displayForPlayerX(playerX_score);
         }
         if (btn1.equals("X") && btn5.equals("X") && btn9.equals("X")) {
             Toast.makeText(MainActivity.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
-              playerX_score=+1;
+            playerX_score = +1;
             displayForPlayerX(playerX_score);
         }
         if (btn3.equals("X") && btn6.equals("X") && btn9.equals("X")) {
             Toast.makeText(MainActivity.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
-            playerX_score=+1;
+            playerX_score = +1;
             displayForPlayerX(playerX_score);
 
         }
         if (btn3.equals("X") && btn5.equals("X") && btn7.equals("X")) {
             Toast.makeText(MainActivity.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
-             playerX_score=+1;
+            playerX_score = +1;
             displayForPlayerX(playerX_score);
 
         }
@@ -358,12 +358,12 @@ public class MainActivity extends AppCompatActivity {
         }
         if (btn4.equals("X") && btn5.equals("X") && btn6.equals("X")) {
             Toast.makeText(MainActivity.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
-            playerX_score =  +1;
+            playerX_score = +1;
             displayForPlayerX(playerX_score);
         }
         if (btn2.equals("X") && btn5.equals("X") && btn8.equals("X")) {
             Toast.makeText(MainActivity.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
-            playerX_score =  +1;
+            playerX_score = +1;
             displayForPlayerX(playerX_score);
         }
 
@@ -371,46 +371,46 @@ public class MainActivity extends AppCompatActivity {
         //This check the moves for Player O if it wins.
         if (btn1.equals("O") && btn2.equals("O") && btn3.equals("O")) {
             Toast.makeText(MainActivity.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
-             playerO_score+=1;
+            playerO_score += 1;
             displayForPlayerO(playerO_score);
         }
         if (btn1.equals("O") && btn4.equals("O") && btn7.equals("O")) {
             Toast.makeText(MainActivity.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
-            playerO_score+=1;
+            playerO_score += 1;
             displayForPlayerO(playerO_score);
         }
         if (btn1.equals("O") && btn5.equals("O") && btn9.equals("O")) {
             Toast.makeText(MainActivity.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
-            playerO_score+=1;
+            playerO_score += 1;
             displayForPlayerO(playerO_score);
         }
         if (btn3.equals("O") && btn6.equals("O") && btn9.equals("O")) {
             Toast.makeText(MainActivity.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
-            playerO_score+=1;
+            playerO_score += 1;
             displayForPlayerO(playerO_score);
         }
         if (btn3.equals("O") && btn5.equals("O") && btn7.equals("O")) {
             Toast.makeText(MainActivity.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
-            playerO_score+=1;
+            playerO_score += 1;
             displayForPlayerO(playerO_score);
         }
         if (btn7.equals("O") && btn8.equals("O") && btn9.equals("O")) {
             Toast.makeText(MainActivity.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
-            playerO_score+=1;
+            playerO_score += 1;
             displayForPlayerO(playerO_score);
         }
         if (btn4.equals("O") && btn5.equals("O") && btn6.equals("O")) {
             Toast.makeText(MainActivity.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
-            playerO_score+=1;
+            playerO_score += 1;
             displayForPlayerO(playerO_score);
         }
         if (btn2.equals("O") && btn5.equals("O") && btn8.equals("O")) {
             Toast.makeText(MainActivity.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
-            playerO_score+=1;
+            playerO_score += 1;
             displayForPlayerO(playerO_score);
         }
         //if no score added, just display its a draw.
-        if (playerX_score == +0 && playerO_score == +0){
+        if (playerX_score == +0 && playerO_score == +0) {
             Toast.makeText(MainActivity.this, "Well Done! Its a Draw!", Toast.LENGTH_LONG).show();
         }
 
@@ -463,7 +463,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.playerO_score);
         scoreView.setText(String.valueOf(score));
     }
-
 
 
 }

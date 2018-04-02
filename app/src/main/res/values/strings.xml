@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">TicTacToe</string>
+    <string name="x_score">X Score</string>
+    <string name="o_score">O Score</string>
+    <string name="_0">0</string>
+    <string name="_0Score">0</string>
+    <string name="player_o">Player O</string>
+    <string name="choose_your_player">Choose Your Player</string>
+    <string name="player_x">Player X</string>
+    <string name="reset">Reset</string>
+    <string name="change_to_5">Change to 5</string>
 </resources>
