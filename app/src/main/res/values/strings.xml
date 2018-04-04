@@ -9,4 +9,7 @@
     <string name="player_x">Player X</string>
     <string name="reset">Reset</string>
     <string name="change_to_5">Change to 5</string>
+    <string name="play_with_computer">Play with Computer</string>
+    <string name="play_with_a_friend">Play with a Friend</string>
+    <string name="programmer">Onayemi Abdulmaleek Babajide</string>
 </resources>

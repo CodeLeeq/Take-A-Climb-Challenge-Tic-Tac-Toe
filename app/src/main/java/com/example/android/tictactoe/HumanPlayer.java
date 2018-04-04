@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class HumanPlayer extends AppCompatActivity {
 
-    //This is a global variable for all the 9 buttons plus rest button.
+    //This is a global variable for all the  buttons plus reset button.
     private Button button1;
     private Button button2;
     private Button button3;
@@ -47,13 +47,8 @@ public class HumanPlayer extends AppCompatActivity {
     private int playerO_score ;
 
 
-    /**
-     * RadioButton playX = (RadioButton) findViewById(R.id.playerX);
-     * boolean Xturn = playX.isChecked();
-     * <p>
-     * RadioButton playO = (RadioButton) findViewById(R.id.playerX);
-     * boolean Oturn = playO.isChecked();
-     */
+
+    //set a chosen text to a button.
     private void play(Button button) {
         //check if board is empty
         if (button.getText().toString().equals("")) {
@@ -73,6 +68,7 @@ public class HumanPlayer extends AppCompatActivity {
             }
         }
         gameEnd();
+
     }
 
     @Override
@@ -276,6 +272,12 @@ public class HumanPlayer extends AppCompatActivity {
                 play(button5_2);
             }
         });
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resetBoard();
+            }
+        });
 
         //This button change its text to another textString to reveal the other buttons and display the hidden button when called.
         show5.setOnClickListener(new View.OnClickListener() {
@@ -347,44 +349,52 @@ public class HumanPlayer extends AppCompatActivity {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
             playerX_score = +1;
             displayForPlayerX(playerX_score);
+            resetBoard();
 
         }
         if (btn1.equals("X") && btn4.equals("X") && btn7.equals("X")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
             playerX_score = +1;
             displayForPlayerX(playerX_score);
+            resetBoard();
         }
         if (btn1.equals("X") && btn5.equals("X") && btn9.equals("X")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
             playerX_score = +1;
             displayForPlayerX(playerX_score);
+            resetBoard();
         }
         if (btn3.equals("X") && btn6.equals("X") && btn9.equals("X")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
             playerX_score = +1;
             displayForPlayerX(playerX_score);
+            resetBoard();
 
         }
         if (btn3.equals("X") && btn5.equals("X") && btn7.equals("X")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
             playerX_score = +1;
             displayForPlayerX(playerX_score);
+            resetBoard();
 
         }
         if (btn7.equals("X") && btn8.equals("X") && btn9.equals("X")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
             playerX_score = +1;
             displayForPlayerX(playerX_score);
+            resetBoard();
         }
         if (btn4.equals("X") && btn5.equals("X") && btn6.equals("X")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
             playerX_score = +1;
             displayForPlayerX(playerX_score);
+            resetBoard();
         }
         if (btn2.equals("X") && btn5.equals("X") && btn8.equals("X")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
             playerX_score = +1;
             displayForPlayerX(playerX_score);
+            resetBoard();
         }
 
 
@@ -393,51 +403,60 @@ public class HumanPlayer extends AppCompatActivity {
             Toast.makeText(HumanPlayer.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
             playerO_score += 1;
             displayForPlayerO(playerO_score);
+            resetBoard();
+
         }
         if (btn1.equals("O") && btn4.equals("O") && btn7.equals("O")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
             playerO_score += 1;
             displayForPlayerO(playerO_score);
+            resetBoard();
         }
         if (btn1.equals("O") && btn5.equals("O") && btn9.equals("O")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
             playerO_score += 1;
             displayForPlayerO(playerO_score);
+            resetBoard();
         }
         if (btn3.equals("O") && btn6.equals("O") && btn9.equals("O")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
             playerO_score += 1;
             displayForPlayerO(playerO_score);
+            resetBoard();
         }
         if (btn3.equals("O") && btn5.equals("O") && btn7.equals("O")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
             playerO_score += 1;
             displayForPlayerO(playerO_score);
+            resetBoard();
         }
         if (btn7.equals("O") && btn8.equals("O") && btn9.equals("O")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
             playerO_score += 1;
             displayForPlayerO(playerO_score);
+            resetBoard();
         }
         if (btn4.equals("O") && btn5.equals("O") && btn6.equals("O")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
             playerO_score += 1;
             displayForPlayerO(playerO_score);
+            resetBoard();
         }
         if (btn2.equals("O") && btn5.equals("O") && btn8.equals("O")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player O WON!", Toast.LENGTH_LONG).show();
             playerO_score += 1;
             displayForPlayerO(playerO_score);
+            resetBoard();
         }
         //if no score added, just display its a draw.
-        if (playerX_score == 0 && playerO_score == +0) {
+       /* if (playerX_score == 0 && playerO_score == +0) {
             Toast.makeText(HumanPlayer.this, "Well Done! Its a Draw!", Toast.LENGTH_LONG).show();
-        }
+        }*/
 
     }
 
     // This method will rest the whole button to an empty string when clicked.
-    public void resetBoard(View view) {
+    public void resetBoard( ) {
 
         button1.setText("");
         button2.setText("");

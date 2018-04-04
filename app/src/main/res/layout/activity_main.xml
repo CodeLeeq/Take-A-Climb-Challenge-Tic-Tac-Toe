@@ -5,11 +5,15 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/xogame"
-    android:scaleType = "centerCrop"
+    android:background="#fcfbf7"
     tools:context="com.example.android.tictactoe.MainActivity">
 
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/xogame" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,9 +22,9 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:textAllCaps="true"
-        android:text="Code Leeq"
-        android:textColor="#0043c8"
-        android:textSize="20sp"
+        android:text="@string/programmer"
+        android:textColor="#f1411d"
+        android:textSize="16sp"
         android:id="@+id/textView2" />
 
 

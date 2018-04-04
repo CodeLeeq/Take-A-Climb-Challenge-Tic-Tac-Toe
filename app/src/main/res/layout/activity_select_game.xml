@@ -7,8 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/xogame"
-    android:scaleType="fitCenter"
+    android:background="#4055f1"
     tools:context="com.example.android.tictactoe.selectGame">
 
     <Button
@@ -18,8 +17,8 @@
         android:layout_above="@+id/buttonVsFriend"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="99dp"
-        android:textSize="20dp"
-        android:text="You vs Computer" />
+        android:textSize="20sp"
+        android:text="@string/play_with_computer" />
 
     <Button
         android:layout_width="wrap_content"
@@ -27,7 +26,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="175dp"
-        android:textSize="20dp"
-        android:text="You vs Friend"
+        android:textSize="20sp"
+        android:text="@string/play_with_a_friend"
         android:id="@+id/buttonVsFriend" />
 </RelativeLayout>

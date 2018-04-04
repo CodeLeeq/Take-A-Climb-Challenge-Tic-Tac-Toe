@@ -328,7 +328,6 @@
             android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="resetBoard"
             android:textColor="#260eff"
             android:text="@string/reset"
             tools:ignore="RelativeOverlap" />
