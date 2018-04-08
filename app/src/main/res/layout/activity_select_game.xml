@@ -29,4 +29,13 @@
         android:textSize="20sp"
         android:text="@string/play_with_a_friend"
         android:id="@+id/buttonVsFriend" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp"
+        android:text="@string/version"
+        android:textColor="#ffffff"/>
 </RelativeLayout>

@@ -103,6 +103,7 @@ public class HumanPlayer extends AppCompatActivity {
         button5_2 = findViewById(R.id.button5_2);
         show5 = findViewById(R.id.show5);
         reset = findViewById(R.id.reset);
+
         //initializing the remaining button visibility.
         button10.setVisibility(View.GONE);
         button11.setVisibility(View.GONE);
@@ -347,7 +348,7 @@ public class HumanPlayer extends AppCompatActivity {
         //This check the moves for Player X if it wins.
         if (btn1.equals("X") && btn2.equals("X") && btn3.equals("X")) {
             Toast.makeText(HumanPlayer.this, "Congrats! Player X WON!", Toast.LENGTH_LONG).show();
-            playerX_score = +1;
+            playerX_score++;
             displayForPlayerX(playerX_score);
             resetBoard();
 
