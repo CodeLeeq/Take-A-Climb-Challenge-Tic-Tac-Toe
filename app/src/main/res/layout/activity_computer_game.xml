@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp"
-    android:layout_marginTop="1dp"
+    android:layout_marginTop="10dp"
     android:orientation="vertical"
     tools:context="com.example.android.tictactoe.ComputerGame">
 
@@ -65,7 +65,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:weightSum="3"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -77,6 +77,8 @@
             android:layout_height="match_parent"
             android:textSize="40sp"
             android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorAccent"
             tools:ignore="ButtonStyle" />
 
         <Button
@@ -85,6 +87,8 @@
             android:layout_height="match_parent"
             android:textSize="40sp"
             android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimaryDark"
             tools:ignore="ButtonStyle" />
 
         <Button
@@ -92,14 +96,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorAccent"
             android:layout_weight="1"
             tools:ignore="ButtonStyle" />
-
-
-
-
-
-
     </LinearLayout>
     <LinearLayout
         android:weightSum="3"
@@ -112,6 +112,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimaryDark"
             tools:ignore="ButtonStyle" />
 
         <Button
@@ -119,14 +121,18 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#ffffff"
             android:textSize="40sp"
+            android:backgroundTint="@color/colorAccent"
             tools:ignore="ButtonStyle" />
         <Button
             android:id="@+id/button2_3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#ffffff"
             android:textSize="40sp"
+            android:backgroundTint="@color/colorPrimaryDark"
             tools:ignore="ButtonStyle" />
 
 
@@ -145,6 +151,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorAccent"
             tools:ignore="ButtonStyle" />
 
         <Button
@@ -153,6 +161,8 @@
             android:layout_height="match_parent"
             android:textSize="40sp"
             android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimaryDark"
             tools:ignore="ButtonStyle" />
         <Button
             android:id="@+id/button3_3"
@@ -160,6 +170,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorAccent"
             tools:ignore="ButtonStyle" />
 
     </LinearLayout>
@@ -175,6 +187,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#260eff"
+        style="?android:attr/borderlessButtonStyle"
         android:text="@string/reset"
         tools:ignore="RelativeOverlap" />
 
@@ -185,6 +198,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:layout_alignParentRight="true"
         android:text="@string/change_to_5"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </LinearLayout>

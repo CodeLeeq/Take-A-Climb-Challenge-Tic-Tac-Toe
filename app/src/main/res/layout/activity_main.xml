@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="#fcfbf7"
+    android:background="#5aa3de"
     tools:context="com.example.android.tictactoe.MainActivity">
 
 
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/xogame" />
+        android:src="@drawable/tictactoe" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
         android:layout_gravity="center_horizontal"
         android:textAllCaps="true"
         android:text="@string/programmer"
-        android:textColor="#f1411d"
+        android:textColor="#f21912"
         android:textSize="16sp"
         android:id="@+id/textView2" />
 

@@ -6,11 +6,18 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp"
-    android:layout_marginTop="1dp"
+    android:layout_marginTop="10dp"
     android:orientation="vertical"
     tools:context="com.example.android.tictactoe.HumanPlayer">
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_player"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fc0808"
+        />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -26,21 +33,16 @@
             android:text="@string/player_x"
             android:layout_marginEnd="5dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/choose_your_player"
-            android:textColor="@color/colorPrimary"
 
-            />
 
         <RadioButton
             android:id="@+id/playerO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:layout_marginLeft="150dp"
             android:text="@string/player_o"
-            />
+            android:layout_marginStart="150dp" />
 
     </RadioGroup>
 
@@ -48,6 +50,7 @@
 
     <LinearLayout
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -76,11 +79,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="true"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="3dp"
             android:textColor="#22c989"
             android:textSize="20sp"
             android:text="@string/o_score"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="3dp" />
 
         <TextView
             android:id="@+id/playerO_score"
@@ -97,12 +102,12 @@
 
     <LinearLayout
 
-         android:layout_marginBottom="20dp"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-         >
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,9 +118,14 @@
             <Button
 
                 android:id="@+id/button1"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
+                android:background="@color/colorAccent"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
@@ -123,15 +133,22 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
                 android:layout_weight="1"
+                android:background="@color/colorPrimary"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button3"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
+                android:background="@color/colorAccent"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
@@ -147,15 +164,22 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
+                android:background="@color/colorPrimary"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button5"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
                 android:layout_weight="1"
+                android:background="@color/colorAccent"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
@@ -163,7 +187,11 @@
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
+                android:background="@color/colorPrimary"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
@@ -178,9 +206,13 @@
 
             <Button
                 android:id="@+id/button7"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
+                android:background="@color/colorAccent"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
@@ -189,14 +221,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button9"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
+                android:background="@color/colorAccent"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
@@ -216,6 +254,7 @@
             android:layout_height="wrap_content"
             android:textColor="#260eff"
             android:text="@string/reset"
+            style="?android:attr/borderlessButtonStyle"
             tools:ignore="RelativeOverlap" />
 
         <Button
@@ -225,6 +264,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:layout_alignParentRight="true"
             android:text="@string/change_to_5"
+            style="?android:attr/borderlessButtonStyle"
             android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
