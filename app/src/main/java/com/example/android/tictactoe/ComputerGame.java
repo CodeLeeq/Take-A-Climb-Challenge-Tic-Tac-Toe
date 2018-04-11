@@ -1,5 +1,7 @@
 package com.example.android.tictactoe;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.Random;
@@ -14,9 +16,9 @@ import android.widget.Toast;
 public class ComputerGame extends AppCompatActivity {
 
     int c[][];
-     int i, j, k = 0;
+     int i, j = 0;
      Button btn[][];
-     AI computer;
+     algorithm computer;
     private Button show5;
     private Button reset;
 
@@ -25,40 +27,28 @@ public class ComputerGame extends AppCompatActivity {
     private int humanscore = 0 ;
 
 
-
-    //set a chosen text to a button.
-    private void play(android.widget.Button button) {
-        //check if board is empty
-        if (button.getText().toString().equals("")) {
-            String player;
-
-            RadioButton playX = findViewById(R.id.playerX);
-            RadioButton playO = findViewById(R.id.playerO);
-            if (playX.isChecked()) {
-                player = "X";
-                button.setText(player);
-                playX.setChecked(false);
-                playO.setChecked(true);
-            } else if (playO.isChecked()) {
-                playX.setChecked(true);
-                player = "O";
-                button.setText(player);
-            }
-        }
-
-        checkBoard();
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_computer_game);
 
-        reset = findViewById(R.id.reset);
-
-
         setBoard();
+
+        reset = findViewById(R.id.reset);
+        show5 = findViewById(R.id.show5);
+
+        //This method respond once the button is clicked, it will change the board to 5x5.
+        show5 =  findViewById(R.id.show5);
+        show5.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                increaseToFive();
+            }
+        });
+
+
+
 
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +62,7 @@ public class ComputerGame extends AppCompatActivity {
     }
 
     private void setBoard() {
-          computer = new AI();
+          computer = new algorithm();
           btn = new Button[4][4];
           c = new int[4][4];
 
@@ -80,19 +70,19 @@ public class ComputerGame extends AppCompatActivity {
 
 
 
-          btn[1][3] = (Button) findViewById(R.id.button1_1);
-          btn[1][2] = (Button) findViewById(R.id.button1_2);
-          btn[1][1] = (Button) findViewById(R.id.button1of3);
+          btn[1][3] =   findViewById(R.id.button1_1);
+          btn[1][2] =   findViewById(R.id.button1_2);
+          btn[1][1] =   findViewById(R.id.button1_3);
 
 
-          btn[2][3] = (Button) findViewById(R.id.button2_1);
-          btn[2][2] = (Button) findViewById(R.id.button2_2);
-          btn[2][1] = (Button) findViewById(R.id.button2of3);
+          btn[2][3] =   findViewById(R.id.button2_1);
+          btn[2][2] =   findViewById(R.id.button2_2);
+          btn[2][1] =   findViewById(R.id.button2_3);
 
 
-          btn[3][3] = (Button) findViewById(R.id.button3_1);
-          btn[3][2] = (Button) findViewById(R.id.button3_2);
-          btn[3][1] = (Button) findViewById(R.id.button3of3);
+          btn[3][3] =   findViewById(R.id.button3_1);
+          btn[3][2] =   findViewById(R.id.button3_2);
+          btn[3][1] =   findViewById(R.id.button3_3);
 
           for (i = 1; i <= 3; i++) {
                for (j = 1; j <= 3; j++)
@@ -118,7 +108,7 @@ public class ComputerGame extends AppCompatActivity {
           int y;
 
 
-          public MyClickListener(int x, int y) {
+          private MyClickListener(int x, int y) {
                this.x = x;
                this.y = y;
           }
@@ -137,7 +127,7 @@ public class ComputerGame extends AppCompatActivity {
           }
      }
 
-     private class AI {
+     private class algorithm {
           public void takeTurn() {
           if(c[1][1]==2 &&
                     ((c[1][2]==0 && c[1][3]==0) ||
@@ -249,7 +239,7 @@ public class ComputerGame extends AppCompatActivity {
                if(!empty) {
                     gameOver = true;
                     android.widget.Toast.makeText(ComputerGame.this, "Good Job! Its a Tie!", Toast.LENGTH_LONG).show();
-
+                   resetBoard();
                }
           }
           return gameOver;
@@ -265,6 +255,13 @@ public class ComputerGame extends AppCompatActivity {
             }
         }
         setBoard();
+    }
+
+    public void increaseToFive(){
+        Intent intent = new Intent(this, compChangeToFive.class );
+        startActivity(intent);
+        onBackPressed();
+
     }
 
     /**

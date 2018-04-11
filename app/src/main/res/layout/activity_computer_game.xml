@@ -12,37 +12,7 @@
 
 
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/playerX"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:textSize="20sp"
-            android:text="@string/player_x"
-            android:layout_marginEnd="5dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/choose_your_player"
-            android:textColor="@color/colorPrimary"
-
-            />
-
-        <RadioButton
-            android:id="@+id/playerO"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="@string/player_o"
-            />
-
-    </RadioGroup>
 
 
 
@@ -96,7 +66,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="10dp"
-        android:weightSum="5"
+        android:weightSum="3"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -118,7 +88,7 @@
             tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/button1of3"
+            android:id="@+id/button1_3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
@@ -128,9 +98,11 @@
 
 
 
+
+
     </LinearLayout>
     <LinearLayout
-        android:weightSum="5"
+        android:weightSum="3"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -150,7 +122,7 @@
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
         <Button
-            android:id="@+id/button2of3"
+            android:id="@+id/button2_3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -158,12 +130,14 @@
             tools:ignore="ButtonStyle" />
 
 
+
+
     </LinearLayout>
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="5">
+        android:weightSum="3">
 
         <Button
             android:id="@+id/button3_1"
@@ -181,13 +155,12 @@
             android:layout_weight="1"
             tools:ignore="ButtonStyle" />
         <Button
-            android:id="@+id/button3of3"
+            android:id="@+id/button3_3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
-
 
     </LinearLayout>
 
@@ -195,6 +168,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal">
     <Button
         android:id="@+id/reset"

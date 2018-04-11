@@ -13,6 +13,8 @@
     <string name="play_with_a_friend">Play with a Friend</string>
     <string name="programmer">Onayemi Abdulmaleek Babajide</string>
     <string name="version">v 1.0</string>
-    <string name="computerScore">Computer</string>
-    <string name="humanScore">You</string>
+    <string name="computerScore">Computer:</string>
+    <string name="humanScore">You:</string>
+    <string name="change_to_3">Change To 3</string>
+    <string name="yourScore">You:</string>
 </resources>
