@@ -29,9 +29,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
+            android:layout_marginLeft="15dp"
             android:textSize="20sp"
             android:text="@string/player_x"
-            android:layout_marginEnd="5dp" />
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="15dp" />
 
 
 
@@ -40,62 +42,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="10dp"
             android:text="@string/player_o"
-            android:layout_marginStart="150dp" />
+            android:layout_marginStart="100dp" />
 
     </RadioGroup>
 
 
-
     <LinearLayout
-        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:orientation="horizontal">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="4dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textAllCaps="true"
-            android:textSize="20sp"
             android:text="@string/x_score"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="10dp" />
+            android:textAllCaps="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp" />
+
         <TextView
             android:id="@+id/playerX_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="130dp"
-            android:textSize="20sp"
-            android:textColor="#f50a0a"
             android:text="@string/_0"
-            android:layout_marginEnd="130dp" />
+            android:textColor="#f50a0a"
+            android:textSize="20sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/o_score"
             android:textAllCaps="true"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="3dp"
             android:textColor="#22c989"
             android:textSize="20sp"
-            android:text="@string/o_score"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="3dp" />
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="120dp" />
 
         <TextView
             android:id="@+id/playerO_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:text="@string/_0"
             android:textColor="#f50a0a"
-            android:text="@string/_0" />
-
-
+            android:textSize="20sp" />
 
 
     </LinearLayout>
@@ -105,14 +100,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginTop="30dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:weightSum="3">
 
             <Button
@@ -121,9 +116,9 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:layout_marginEnd="3dp"
-                android:layout_marginStart="3dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorAccent"
                 android:textSize="40sp"
@@ -133,10 +128,11 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:textSize="40sp"
+                android:textColor="#ffffff"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -144,12 +140,13 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:layout_marginEnd="3dp"
-                android:layout_marginStart="3dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorAccent"
                 android:textSize="40sp"
+                android:textColor="#ffffff"
                 tools:ignore="ButtonStyle" />
 
 
@@ -164,12 +161,13 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:layout_marginEnd="3dp"
-                android:layout_marginStart="3dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:textSize="40sp"
+                android:textColor="#ffffff"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -177,22 +175,24 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorAccent"
                 android:textSize="40sp"
+                android:textColor="#ffffff"
                 tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:layout_marginEnd="3dp"
-                android:layout_marginStart="3dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:textSize="40sp"
+                android:textColor="#ffffff"
                 tools:ignore="ButtonStyle" />
 
 
@@ -209,11 +209,12 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="3dp"
-                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorAccent"
                 android:textSize="40sp"
+                android:textColor="#ffffff"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -222,7 +223,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/colorPrimaryDark"
-
+                android:textColor="#ffffff"
                 android:textSize="40sp"
                 tools:ignore="ButtonStyle" />
 
@@ -231,11 +232,12 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="3dp"
-                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorAccent"
                 android:textSize="40sp"
+                android:textColor="#ffffff"
                 tools:ignore="ButtonStyle" />
 
 

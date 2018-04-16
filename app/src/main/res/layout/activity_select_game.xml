@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#4055f1"
+    android:background="#7985e4"
     tools:context="com.example.android.tictactoe.selectGame">
 
     <Button
+        android:fontFamily="serif-monospace"
         android:id="@+id/buttonVsComp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,17 +18,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="99dp"
         android:textColor="#ffffff"
-        android:textSize="20sp"
+        android:textSize="25sp"
         style="?android:attr/borderlessButtonStyle"
         android:text="@string/play_with_computer" />
 
     <Button
+        android:fontFamily="serif-monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="175dp"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textColor="#ffffff"
         android:text="@string/play_with_a_friend"
         style="?android:attr/borderlessButtonStyle"

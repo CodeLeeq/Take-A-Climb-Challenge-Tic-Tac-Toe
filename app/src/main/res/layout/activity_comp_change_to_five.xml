@@ -74,6 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             android:layout_weight="1"
             android:backgroundTint="@color/colorPrimaryDark"
             tools:ignore="ButtonStyle" />
@@ -83,6 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             android:layout_weight="1"
             tools:ignore="ButtonStyle" />
 
@@ -91,6 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             android:layout_weight="1"
             tools:ignore="ButtonStyle" />
 
@@ -107,6 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             android:layout_weight="1"
             android:backgroundTint="@color/colorPrimaryDark"
             tools:ignore="ButtonStyle" />
@@ -124,6 +128,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             tools:ignore="ButtonStyle" />
 
         <Button
@@ -131,6 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
         <Button
@@ -138,6 +144,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
         <Button
@@ -146,12 +153,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             tools:ignore="ButtonStyle" />
         <Button
             android:id="@+id/button2_5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
 
@@ -160,6 +169,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:textColor="#ffffff"
         android:weightSum="5">
 
         <Button
@@ -167,6 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
 
@@ -176,12 +187,14 @@
             android:layout_height="match_parent"
             android:textSize="40sp"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             tools:ignore="ButtonStyle" />
         <Button
             android:id="@+id/button3_3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             android:backgroundTint="@color/colorAccent"
             tools:ignore="ButtonStyle" />
@@ -190,6 +203,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
         <Button
@@ -197,6 +211,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
 
@@ -213,6 +228,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             tools:ignore="ButtonStyle" />
 
         <Button
@@ -220,6 +236,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
         <Button
@@ -234,6 +251,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
         <Button
@@ -241,6 +259,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             android:textSize="40sp"
             tools:ignore="ButtonStyle" />
 
@@ -258,6 +277,7 @@
             android:textSize="40sp"
             android:backgroundTint="@color/colorPrimaryDark"
             android:layout_weight="1"
+            android:textColor="#0e0e0e"
             tools:ignore="ButtonStyle" />
 
         <Button
@@ -265,6 +285,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             android:layout_weight="1"
             tools:ignore="ButtonStyle" />
         <Button
@@ -272,6 +293,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             android:layout_weight="1"
             tools:ignore="ButtonStyle" />
         <Button
@@ -279,6 +301,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             android:layout_weight="1"
             tools:ignore="ButtonStyle" />
         <Button
@@ -286,6 +309,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="40sp"
+            android:textColor="#0e0e0e"
             android:layout_weight="1"
             android:backgroundTint="@color/colorPrimaryDark"
             tools:ignore="ButtonStyle" />

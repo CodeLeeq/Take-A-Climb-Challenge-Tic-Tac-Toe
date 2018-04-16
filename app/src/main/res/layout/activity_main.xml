@@ -5,17 +5,14 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="#5aa3de"
+    android:background="@drawable/tictactoe"
     tools:context="com.example.android.tictactoe.MainActivity">
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/tictactoe" />
+
 
     <TextView
+        android:fontFamily="monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -23,7 +20,7 @@
         android:layout_gravity="center_horizontal"
         android:textAllCaps="true"
         android:text="@string/programmer"
-        android:textColor="#f21912"
+        android:textColor="#1e1d1d"
         android:textSize="16sp"
         android:id="@+id/textView2" />
 

@@ -19,8 +19,10 @@
         <activity android:name=".HumanPlayer" />
         <activity android:name=".ComputerGame" />
         <activity android:name=".selectGame" />
-        <activity android:name=".humanChangeToFive" />
-        <activity android:name=".compChangeToFive"></activity>
+        <activity android:name=".humanChangeToFive"
+                  android:noHistory="true"/>
+        <activity android:name=".compChangeToFive"
+                  android:noHistory="true"></activity>
     </application>
 
 </manifest>
